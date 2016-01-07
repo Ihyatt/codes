@@ -1,0 +1,27 @@
+def no_repeats(year_start, year_end)
+    array_of_years = []
+    (year_start..year_end).each do |years|
+      if year_check(years)
+        array_of_years.push(years) 
+    end
+     end 
+     array_of_years
+end 
+
+
+def year_check(years)
+    flag = true
+    hash = Hash.new(0)
+    number_repeat = 1
+   array_year = years.to_s.split("")
+   
+   array_year.each do |stringYear|
+     hash[stringYear] += 1
+ end 
+     hash.each do |number, frequency|
+     if frequency > number_repeat
+    flag = false
+end
+end 
+  flag  
+end 
