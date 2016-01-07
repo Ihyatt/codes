@@ -1,0 +1,19 @@
+def maximumProfit(arr) 
+  maxProfit = nil
+  buyAndSellPair = nil
+  
+  (0...arr.length - 1).each do |buyDay|
+    (buyDay + 1 ..arr.length - 1).each do |sellDay| 
+      profit = arr[sellDay] - arr[buyDay]
+      
+      if maxProfit.nil?
+        maxProfit = profit
+        buyAndSellPair = [buyDay, sellDay]
+      else
+        if (profit > maxProfit)
+          maxProfit = profit
+          buyAndSellPair = [buyDay, sellDay]
+        end
+      end
+    end
+  end
