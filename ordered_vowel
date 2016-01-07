@@ -1,0 +1,19 @@
+def ordered_vowel_words(str)
+  splitted_sent = str.split(" ")
+  splitted_sent.map do |word|
+    if ordered_vowel_word?(word)
+      word
+    end
+  end.join(" ")
+end
+
+def ordered_vowel_word?(word)
+  flag = false 
+  arr = []
+  (0..word.length).each do |letterIdx|
+    arr << word[letterIdx] if word[letterIdx] =~ /[aeiou]/
+  end 
+  if arr == arr.sort 
+flag = true 
+end 
+end
