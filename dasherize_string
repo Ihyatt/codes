@@ -1,0 +1,33 @@
+def dasherize(number)
+       if (number < 0)
+           return ""
+       end
+   
+       str = number.to_s
+       final_str = ""   
+
+      str.split("").each do |numLetter|
+          if (Integer(numLetter) % 2 == 1) 
+              final_str += ( "-" + numLetter + "-" )
+          else
+              final_str += numLetter
+          end
+      end
+        remove_dashes_from_ends(remove_multiple_dashes(final_str))
+  end
+  
+  def remove_dashes_from_ends(string)
+      if (string[0] == "-" && string[-1] == "-")
+          return string[1..-2]
+      elsif (string[0] == "-")
+          return string[1..-1]
+      elsif (string[-1] == "-")
+          return string[0..-2]
+     else
+          return string
+      end
+  end
+  
+  def remove_multiple_dashes(string)
+      string.gsub("--", "-")
+  end
