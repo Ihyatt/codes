@@ -1,0 +1,11 @@
+def greatest(array)
+    largest= array.first 
+    array.each  do |x| 
+    if x > largest 
+    largest=x 
+end
+end
+largest 
+end
+
+puts greatest(array)
