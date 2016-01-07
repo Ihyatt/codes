@@ -17,3 +17,5 @@ def maximumProfit(arr)
       end
     end
   end
+buyAndSellPair
+end
