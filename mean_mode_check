@@ -1,0 +1,42 @@
+def meanMode(arr)
+
+  mean = meanCheck(arr)
+  mode = modeCheck(arr)
+  
+  if mode == mean
+      return 1
+else
+    return 0
+end        
+end
+
+def meanCheck(arr)
+    length = arr.length
+    sum = 0 
+    arr.each do |num|
+        sum += num 
+    end 
+    
+    findMean = sum/length
+    
+end 
+
+def modeCheck(arr)
+    hash = Hash.new(0)
+    arr.each do |el|
+    hash[el] += 1
+end 
+
+ greatest = 1
+ key_check = nil 
+ 
+ hash.each do |key,value|
+ if value > greatest
+     greatest = value
+     key_check = key 
+end 
+end
+
+   key_check 
+    
+end 
