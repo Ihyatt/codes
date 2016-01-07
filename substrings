@@ -1,0 +1,7 @@
+def substrings(str)
+  arr = []
+  (0..str.length).each do |idx|
+    arr << str[0..idx]
+  end
+  arr
+end
