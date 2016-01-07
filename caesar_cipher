@@ -1,0 +1,13 @@
+def caesarCipher(string, shift)
+  (0..string.length - 1).map do |idx|
+     caesarCipherSingleLetter(string[idx], shift)
+  end.join("")
+end
+
+def caesarCipherSingleLetter(letter, shiftedLetter)
+  alphabet = ("a".."z").to_a
+  indexOfOurLetter = alphabet.find_index(letter)
+  newIndex = ( indexOfOurLetter + shiftedLetter ) % 26
+  newLetter = alphabet[newIndex] 
+  newLetter
+end
