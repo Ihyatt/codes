@@ -1,0 +1,5 @@
+def recFac(n)
+  return 1 if (n == 0)
+  
+  return n * recFac(n - 1)
+end
