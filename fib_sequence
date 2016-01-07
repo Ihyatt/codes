@@ -1,0 +1,12 @@
+def fibs(n)
+  return nil if ( n < 0 )
+  return [] if ( n == 0)
+  return [0] if ( n == 1)
+  return [0, 1] if ( n == 2)
+  arr = [0, 1]
+  until (arr.length == n)
+  nextEl = arr[arr.length - 2] + arr[arr.length - 1] 
+    arr.push(nextEl) 
+  end
+  arr 
+end
