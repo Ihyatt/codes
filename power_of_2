@@ -1,0 +1,12 @@
+def powerOfTwo(num)
+ return false if num % 2 != 0   
+  flag = false 
+  powerNumber = 1
+  while ( powerNumber < num )
+    powerNumber *= 2
+    if (powerNumber == num)
+      flag = true
+    end
+  end
+  flag
+end 
