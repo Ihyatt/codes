@@ -1,0 +1,26 @@
+
+
+def findHighestInteger(num1, num2)
+  largestCommonDecominator = 1
+  if (num1 > num2)
+    smaller = num2
+    larger = num1
+  elsif (num2 > num1)
+    smaller = num1
+    larger = num2
+  else
+    return num1
+  end
+  divisors_of_smaller_number = []
+  (1..smaller).each do |n|
+    divisors_of_smaller_number << n if smaller % n == 0
+  end
+  
+  divisors_of_smaller_number.reverse_each do |divisor|
+    if (larger % divisor == 0)
+      largestCommonDecominator = divisor
+      break
+    end
+  end
+  largestCommonDecominator
+end   
