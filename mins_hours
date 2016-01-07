@@ -1,0 +1,5 @@
+def minutesHours(mins)
+  hours = mins / 60
+  minutes = mins % 60
+  "#{hours}:#{minutes}"
+end 
