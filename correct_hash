@@ -1,0 +1,11 @@
+def hash_correct(hash)
+    array = []
+    newHash = {}
+    hash.each do |key, value|
+      array << value
+  end 
+  array.each do |item|
+      newHash[item[0]] = item
+  end 
+  newHash
+end
