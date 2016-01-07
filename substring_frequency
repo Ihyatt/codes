@@ -1,0 +1,17 @@
+def frequencySubstring(str, substr)
+ total = 0 
+ if (substr.length > str.length)
+    return total
+ end
+ 
+ (0..str.length - substr.length).each do |idx|
+    testString = str.slice(idx, substr.length)
+    if (testString == substr) 
+        total += 1
+        puts "found a substring"
+    else
+        puts "Didn't find a substring"
+    end
+  end
+  total
+end
