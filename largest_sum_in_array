@@ -1,0 +1,15 @@
+def largestSum(array)
+    largest=array.first 
+    array.each_with_index do |el,idx| 
+        if idx == array.length - 1 
+            break 
+        end
+        (idx+1..array.length-1).each do |idx2|
+            sum = el + array[idx2] 
+            if sum >largest 
+                largest=sum 
+            end
+        end
+    end
+    largest 
+end
