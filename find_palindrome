@@ -1,0 +1,17 @@
+def is_palindrome?(substring)
+  substring.split("").reverse.join("") == substring
+end  
+
+def find_palindrome(str)
+  greatest_palindrome = "a"
+  str.split("").each_with_index do |el, letteridx|
+    (letteridx + 1..str.length).each do |letterIdx2|
+      substring = str[letteridx..letterIdx2]
+      if (is_palindrome?(substring) && substring.length > greatest_palindrome.length)
+        greatest_palindrome = substring
+      end
+    end
+  end
+  return nil if greatest_palindrome.length == 1
+  greatest_palindrome
+end 
