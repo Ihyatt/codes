@@ -1,0 +1,23 @@
+def swap(arr, idx1, idx2)
+  temp = arr[idx1]
+  arr[idx1] = arr[idx2]
+  arr[idx2] = temp   
+end
+
+def bubble_sort(arr)
+  while true
+    arr.each_with_index do |num, idx|
+      if (idx == arr.length - 1)
+        break
+      end
+      nextNum = arr[idx + 1]
+      if (num > nextNum)
+        swap(arr, idx, idx + 1)
+        end
+    end
+    if arr == arr.sort
+        break 
+    end
+end
+   arr
+end
