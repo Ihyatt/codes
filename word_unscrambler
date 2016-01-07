@@ -1,0 +1,10 @@
+def wordUnscrambler(scrambledWord, array)
+    unscrambled_word = array.select do |words|
+     unscramble(scrambledWord, words)  
+   end
+   unscrambled_word 
+end
+
+def unscramble(str1, str2)
+  str1.split("").sort.join("") == str2.split("").sort.join("")
+end 
