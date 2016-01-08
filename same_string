@@ -1,4 +1,4 @@
-#return the most common set of letters within a string
+#return the most common set of letters within an array
 
 def sameStrings(arr) 
  hash = Hash.new(0)
