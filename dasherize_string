@@ -1,3 +1,6 @@
+#return a string of a number where there are dashes on both sides 
+#of odd numbers but no dashes at the beginning or end of a string
+
 def dasherize(number)
        if (number < 0)
            return ""
@@ -31,3 +34,4 @@ def dasherize(number)
   def remove_multiple_dashes(string)
       string.gsub("--", "-")
   end
+
