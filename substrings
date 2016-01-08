@@ -1,3 +1,5 @@
+#return substrings of a string within an array 
+
 def substrings(str)
   arr = []
   (0..str.length).each do |idx|
