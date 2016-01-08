@@ -1,3 +1,5 @@
+#reverse an array
+
 def reverse!(arr)
 ( 0..( arr.length - 1 ) / 2 ).each do |beginningIdx| 
     oppositeIdx = (arr.length - 1) - beginningIdx  
