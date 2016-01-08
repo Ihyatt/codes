@@ -1,3 +1,5 @@
+#return a string that already have vowels sorted within each word
+
 def ordered_vowel_words(str)
   splitted_sent = str.split(" ")
   splitted_sent.map do |word|
