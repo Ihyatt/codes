@@ -1,3 +1,5 @@
+#when beginning at a year and ending at another year, return the years that have digits that do not repeat
+
 def no_repeats(year_start, year_end)
     array_of_years = []
     (year_start..year_end).each do |years|
