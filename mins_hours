@@ -1,3 +1,5 @@
+#return the time in terms of hours in minutes with passing in the number of minutes within the parameter
+
 def minutesHours(mins)
   hours = mins / 60
   minutes = mins % 60
