@@ -1,3 +1,5 @@
+#find the greatest number in an array
+
 def greatest(array)
     largest= array.first 
     array.each  do |x| 
@@ -7,5 +9,3 @@ end
 end
 largest 
 end
-
-puts greatest(array)
