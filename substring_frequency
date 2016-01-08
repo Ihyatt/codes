@@ -1,3 +1,5 @@
+#return the frequency of substrings within a string
+
 def frequencySubstring(str, substr)
  total = 0 
  if (substr.length > str.length)
