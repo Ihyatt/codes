@@ -1,3 +1,5 @@
+#check if number is a power of 2
+
 def powerOfTwo(num)
  return false if num % 2 != 0   
   flag = false 
