@@ -1,3 +1,5 @@
+#find the days that represent where a greatest profit exists
+
 def maximumProfit(arr) 
   maxProfit = nil
   buyAndSellPair = nil
