@@ -1,3 +1,5 @@
+#check if mean and mode are equal. If the mean is equal to the mode, return 1, else return 0 
+
 def meanMode(arr)
 
   mean = meanCheck(arr)
@@ -36,7 +38,6 @@ end
      key_check = key 
 end 
 end
-
    key_check 
     
 end 
