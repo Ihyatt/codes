@@ -1,25 +1,27 @@
+#return the most common set of letters within a string
+
 def sameStrings(arr) 
-hash = Hash.new(0)
-arr.each do |el|
-hash[el.split("").sort.join("")] +=1
-end
- greatest = 1
+ hash = Hash.new(0)
+ arr.each do |el|
+  hash[el.split("").sort.join("")] +=1
+ end
+greatest = 1
 key_to_check = nil
   
- hash.each do |key, value| 
+hash.each do |key, value| 
  if value > greatest
-greatest = value
-key_to_check = key
+ greatest = value
+ key_to_check = key
  end
 end
-    
-   results = arr.select do |element|
-    equalStrings?(key_to_check, element)
-   end 
-    results
- end
+
+results = arr.select do |element|
+ equalStrings?(key_to_check, element)
+end 
+ results
+end
 
 def equalStrings?(str1, str2)
  str1.split("").sort.join("") == str2.split("").sort.join("")
- end
+end
 
