@@ -1,3 +1,5 @@
+#find the longest palindrome in a string 
+
 def is_palindrome?(substring)
   substring.split("").reverse.join("") == substring
 end  
