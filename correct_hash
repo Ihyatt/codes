@@ -1,11 +1,9 @@
+# correct the hash's key and value so the the key matches the first letter of the value
+
 def hash_correct(hash)
-    array = []
-    newHash = {}
+    new_hash = {}
     hash.each do |key, value|
-      array << value
+       new_hash[value[0].to_sym] = value 
   end 
-  array.each do |item|
-      newHash[item[0]] = item
-  end 
-  newHash
+ new_hash
 end
