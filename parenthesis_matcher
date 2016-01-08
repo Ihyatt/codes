@@ -1,0 +1,4 @@
+def paren_matcher(str)
+  newStr = str.downcase.gsub(/[a-z]/,"").delete" "
+  newStr == newStr.reverse!
+end
