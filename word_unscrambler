@@ -1,6 +1,8 @@
-def wordUnscrambler(scrambledWord, array)
+#pass in a word and dictionary of words and return the words it unscrambles to. 
+
+def word_unscrambler(scrambled_word, array)
     unscrambled_word = array.select do |words|
-     unscramble(scrambledWord, words)  
+     unscramble(scrambled_word, words)  
    end
    unscrambled_word 
 end
