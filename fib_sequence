@@ -1,3 +1,6 @@
+#fibonacci sequence: return an array with the length of a given num, 
+#where in which each number is added by its previous number to create the next number. 
+
 def fibs(n)
   return nil if ( n < 0 )
   return [] if ( n == 0)
