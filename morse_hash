@@ -1,3 +1,5 @@
+#puts in a string and return in morse code
+
 def findMorseCode(word)
   morse_hash = {
     "a" => ".-",
