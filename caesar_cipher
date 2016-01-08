@@ -1,3 +1,5 @@
+#change each letter in a string by x spaces
+
 def caesarCipher(string, shift)
   (0..string.length - 1).map do |idx|
      caesarCipherSingleLetter(string[idx], shift)
